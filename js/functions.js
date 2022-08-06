@@ -8,12 +8,16 @@ function clearMessages() {
   document.getElementById("messages").innerHTML = "";
 }
 
-var computermove;
-playermove = "kamień";
-printMessage(
-  "Zagrałem" + computermove + "! Jeśli Twój ruch to papier, to wygrywasz!"
-);
-playermove = "papier";
-printMessage(
-  "Zagrałem " + playermove + "! Jeśli Twój ruch to kamień, to wygrywasz!"
-);
+var computerMove, randomNumber;
+randomNumber = Math.floor(Math.random() * 3 + 1);
+console.log("wylosowana liczba to: " + randomNumber);
+if (randomNumber == "1") {
+  computerMove = "kamień";
+} else if (randomNumber == "2") {
+  computerMove = "papier";
+} else {
+  computerMove = "nożyce";
+}
+printMessage("Mój ruch: " + computerMove);
+
+0;
