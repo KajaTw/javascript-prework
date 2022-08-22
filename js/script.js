@@ -1,5 +1,5 @@
 /**
- * Describe this function...
+ * Function buttonClicked
  */
 function buttonClicked(playerMove) {
   clearMessages();
@@ -22,7 +22,7 @@ function buttonClicked(playerMove) {
   }
 
   /**
-   * Describe this function...
+   * Function displayResult
    */
   function displayResult(argPlayerMove, argComputerMove) {
     printMessage(
@@ -41,8 +41,8 @@ function buttonClicked(playerMove) {
     }
   }
 
-  randomNumber = Math.floor(Math.random() * 3 + 1);
-  computerMove = getMoveName(randomNumber);
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
+  const computerMove = getMoveName(randomNumber);
   displayResult(playerMove, computerMove);
 }
 
